@@ -1,7 +1,7 @@
 var customerProfile = /** @class */ (function () {
     function customerProfile() {
         this.customerSalary = 0;
-        this.customerTax = 0.1;
+        this.customerTax = 0.15;
         this.customerYOB = 0;
     }
     customerProfile.prototype.getCustomerName = function (fName, lName) {
@@ -30,7 +30,7 @@ var customerProfile = /** @class */ (function () {
     return customerProfile;
 }());
 var cusProfile = new customerProfile();
-console.log("Customer Name: " + cusProfile.getCustomerName("Ihab", "Kassem"));
+console.log("Customer Name: " + cusProfile.getCustomerName("Ihab", "Mohamad Kassem"));
 console.log("Customer DOB: " + cusProfile.getCustomerDOB(21, 4, 1980));
 console.log("Customer Salary: " + cusProfile.getCustomerSalary(22000) + "$ - Customer Tax: " + cusProfile.getCustomerTax(.33) + "$");
 var netSala = function (tax) {
