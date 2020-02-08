@@ -1,7 +1,7 @@
 class customerProfile{
     customerName:string;
     customerSalary:number=0;
-    customerTax:number=0.1;
+    customerTax:number=0.15;
     customerYOB:number=0;
     getCustomerName(fName:string, lName:string):string{
         this.customerName = fName + " " + lName;
@@ -29,7 +29,7 @@ class customerProfile{
     }
 }
 var cusProfile = new customerProfile();
-console.log("Customer Name: " + cusProfile.getCustomerName("Ihab", "Kassem"));
+console.log("Customer Name: " + cusProfile.getCustomerName("Ihab", "Mohamad Kassem"));
 console.log("Customer DOB: " + cusProfile.getCustomerDOB(21,4,1980));
 console.log("Customer Salary: " + cusProfile.getCustomerSalary(22000) + "$ - Customer Tax: " + cusProfile.getCustomerTax(.33) + "$")
 var netSala = (tax:number)=>{
