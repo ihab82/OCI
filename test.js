@@ -2,7 +2,7 @@ var customerProfile = /** @class */ (function () {
     function customerProfile() {
         this.customerSalary = 0;
         this.customerTax = 0.15;
-        this.customerYOB = 0;
+        this.customerYOB = 1982;
     }
     customerProfile.prototype.getCustomerName = function (fName, lName) {
         this.customerName = fName + " " + lName;

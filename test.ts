@@ -2,7 +2,7 @@ class customerProfile{
     customerName:string;
     customerSalary:number=0;
     customerTax:number=0.15;
-    customerYOB:number=0;
+    customerYOB:number=1982;
     getCustomerName(fName:string, lName:string):string{
         this.customerName = fName + " " + lName;
         return this.customerName;
